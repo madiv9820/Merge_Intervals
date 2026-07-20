@@ -1,0 +1,178 @@
+[
+  {
+    "title": "🌟 Basic Overlapping Intervals",
+    "input": {
+      "intervals": [[1, 3], [2, 6], [8, 10], [15, 18]]
+    },
+    "output": [[1, 6], [8, 10], [15, 18]],
+    "description": "🔗 Merge overlapping ranges while keeping separate intervals unchanged."
+  },
+  {
+    "title": "🤝 Touching Boundaries Merge Together",
+    "input": {
+      "intervals": [[1, 4], [4, 5]]
+    },
+    "output": [[1, 5]],
+    "description": "📌 Combine intervals that meet exactly at the boundary point."
+  },
+  {
+    "title": "🔄 Intervals in Reverse Order",
+    "input": {
+      "intervals": [[4, 7], [1, 4]]
+    },
+    "output": [[1, 7]],
+    "description": "✨ Merge connected intervals regardless of their original ordering."
+  },
+  {
+    "title": "🧩 Multiple Overlapping Chains",
+    "input": {
+      "intervals": [[1, 5], [2, 6], [4, 8], [10, 12]]
+    },
+    "output": [[1, 8], [10, 12]],
+    "description": "⛓️ Combine multiple overlapping intervals into larger continuous ranges."
+  },
+  {
+    "title": "✅ Already Merged Intervals",
+    "input": {
+      "intervals": [[1, 2], [3, 4], [5, 6]]
+    },
+    "output": [[1, 2], [3, 4], [5, 6]],
+    "description": "📋 Return intervals unchanged when no overlaps exist."
+  },
+  {
+    "title": "🎯 Single Interval Case",
+    "input": {
+      "intervals": [[5, 10]]
+    },
+    "output": [[5, 10]],
+    "description": "🟢 Handle cases where only one interval is provided."
+  },
+  {
+    "title": "🌪️ All Intervals Overlap",
+    "input": {
+      "intervals": [[1, 10], [2, 5], [3, 7], [6, 9]]
+    },
+    "output": [[1, 10]],
+    "description": "🔥 Collapse completely overlapping intervals into one range."
+  },
+  {
+    "title": "📍 Same Starting Points",
+    "input": {
+      "intervals": [[1, 4], [1, 5], [1, 3]]
+    },
+    "output": [[1, 5]],
+    "description": "🚀 Merge intervals sharing the same starting point with the largest ending range."
+  },
+  {
+    "title": "🧱 Adjacent and Separate Blocks",
+    "input": {
+      "intervals": [[1, 2], [2, 3], [5, 7], [8, 10]]
+    },
+    "output": [[1, 3], [5, 7], [8, 10]],
+    "description": "⚖️ Merge connected intervals while preserving independent ranges."
+  },
+  {
+    "title": "🏆 Large Range Coverage",
+    "input": {
+      "intervals": [[0, 10000], [200, 500], [999, 2000]]
+    },
+    "output": [[0, 10000]],
+    "description": "🌍 Keep the widest interval when smaller ranges are fully covered."
+  },
+    {
+    "title": "🌀 Completely Nested Intervals",
+    "input": {
+      "intervals": [[1, 10], [2, 3], [4, 8], [5, 7]]
+    },
+    "output": [[1, 10]],
+    "description": "🏰 Merge intervals that are fully contained inside a larger range."
+  },
+  {
+    "title": "🌱 Small Consecutive Ranges",
+    "input": {
+      "intervals": [[1, 2], [2, 3], [3, 4], [4, 5]]
+    },
+    "output": [[1, 5]],
+    "description": "🔗 Combine a sequence of touching intervals into one continuous range."
+  },
+  {
+    "title": "🎭 Mixed Overlapping and Independent Intervals",
+    "input": {
+      "intervals": [[1, 4], [2, 3], [6, 8], [7, 10], [12, 15]]
+    },
+    "output": [[1, 4], [6, 10], [12, 15]],
+    "description": "🧩 Handle a mixture of merged groups and standalone intervals."
+  },
+  {
+    "title": "🚦 Unsorted Interval Collection",
+    "input": {
+      "intervals": [[8, 10], [1, 3], [15, 18], [2, 6]]
+    },
+    "output": [[1, 6], [8, 10], [15, 18]],
+    "description": "🔄 Merge intervals correctly even when input order is random."
+  },
+  {
+    "title": "🌊 Large Overlap Expansion",
+    "input": {
+      "intervals": [[1, 2], [2, 100], [50, 150]]
+    },
+    "output": [[1, 150]],
+    "description": "📈 Expand the merged range when later intervals extend coverage."
+  },
+  {
+    "title": "🧊 No Overlap Between Ranges",
+    "input": {
+      "intervals": [[1, 2], [4, 5], [7, 8], [10, 11]]
+    },
+    "output": [[1, 2], [4, 5], [7, 8], [10, 11]],
+    "description": "❄️ Preserve all intervals when every range is independent."
+  },
+  {
+    "title": "🎯 Duplicate Intervals",
+    "input": {
+      "intervals": [[1, 5], [1, 5], [1, 5]]
+    },
+    "output": [[1, 5]],
+    "description": "♻️ Collapse identical intervals into a single range."
+  },
+  {
+    "title": "🪄 Single Point Intervals",
+    "input": {
+      "intervals": [[1, 1], [1, 2], [2, 2]]
+    },
+    "output": [[1, 2]],
+    "description": "📍 Merge intervals containing the same boundary points."
+  },
+  {
+    "title": "🌋 Gradually Expanding Intervals",
+    "input": {
+      "intervals": [[1, 3], [2, 5], [4, 8], [7, 12]]
+    },
+    "output": [[1, 12]],
+    "description": "🔥 Combine overlapping intervals that continuously extend the range."
+  },
+  {
+    "title": "🏹 Wide Gaps Between Intervals",
+    "input": {
+      "intervals": [[1, 3], [10, 12], [20, 25]]
+    },
+    "output": [[1, 3], [10, 12], [20, 25]],
+    "description": "🌌 Keep distant intervals separate when no overlap exists."
+  },
+  {
+    "title": "🧮 Maximum Constraint Size Sample",
+    "input": {
+      "intervals": [[0, 5000], [4000, 8000], [7500, 10000]]
+    },
+    "output": [[0, 10000]],
+    "description": "⚡ Validate merging behavior across large interval ranges."
+  },
+  {
+    "title": "🎨 Alternating Overlap Pattern",
+    "input": {
+      "intervals": [[1, 10], [20, 30], [5, 25], [40, 50]]
+    },
+    "output": [[1, 30], [40, 50]],
+    "description": "🔗 Merge intervals that bridge previously separated ranges."
+  }
+]
