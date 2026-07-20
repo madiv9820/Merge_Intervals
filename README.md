@@ -48,3 +48,30 @@ The final schedule should be clean, organized, and represent the complete covera
 *Transform a messy collection of overlapping ranges into a clean, organized set of intervals that represents the complete coverage without duplication. 🧩✨*
 
 ---
+### 📊 Approach Comparison
+| 🚀 Feature                         | [🔍 Merge by Expansion](docs/merge_by_expansion.md)                                                  | [⚡ Single-Pass Merge](docs/single_pass_merge.md)                                                      |
+| ---------------------------------- | ---------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| **Core Idea**                      | Expand the current interval by looking ahead until no overlap remains. | Maintain a single active merged interval and update it while traversing. |
+| **Algorithm Paradigm**             | Sorting + Sequential Expansion                                         | Sorting + Greedy                                                         |
+| **Traversal Style**                | Nested traversal with a look-ahead pointer.                            | Single linear traversal after sorting.                                   |
+| **Sorting Required**               | ✅ Yes                                                                  | ✅ Yes                                                                    |
+| **Number of Passes After Sorting** | One traversal (with look-ahead expansion)                              | One traversal                                                            |
+| **Merging Strategy**               | Merge consecutive overlapping intervals before moving forward.         | Merge intervals immediately as they are encountered.                     |
+| **State Maintained**               | Current interval and a look-ahead interval index.                      | Only the current merged interval.                                        |
+| **Code Complexity**                | Moderate                                                               | Simple and concise                                                       |
+| **Readability**                    | Good, but involves two indices.                                        | Excellent, thanks to a single-pass flow.                                 |
+| **Time Complexity**                | ***`O(n log n)`***                                                         | ***`O(n log n)`***                                                           |
+| **Space Complexity**               | ***`O(n)`***                                                               | ***`O(n)`***                                                                 |
+| **Best Use Case**                  | Helps visualize interval expansion step by step.                       | Preferred for interviews and production-quality implementations.         |
+| **Recommendation**                 | ⭐ Great for understanding the merging process.                         | 🏆 Best overall due to its simplicity and elegant greedy logic.          |
+
+### 🏁 Summary
+| 🥇 If your goal is...                   | ✅ Recommended Approach    |
+| --------------------------------------- | ------------------------- |
+| Understand how interval expansion works | 🔍 **Merge by Expansion** |
+| Write the cleanest interview solution   | ⚡ **Single-Pass Merge**   |
+| Minimize implementation complexity      | ⚡ **Single-Pass Merge**   |
+| Learn the intuition before optimization | 🔍 **Merge by Expansion** |
+| Production-ready implementation         | ⚡ **Single-Pass Merge**   |
+
+---
